@@ -576,7 +576,7 @@
         if ([[notification.userInfo objectForKey:@"id"] isKindOfClass:[NSString class]] ) {
             notId = [notification.userInfo objectForKey:@"id"];
         } else {
-            notId = [[notification.userInfo objectForKey:@"id"] stringValue];
+            notId = [notification.userInfo objectForKey:@"id"];
         }
         if ([notId isEqualToString:id]) {
             return notification;
